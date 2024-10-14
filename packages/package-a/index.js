@@ -1,3 +1,3 @@
 module.exports = () => {
-  console.log("Package A - was executed");
+  console.log("Package A  was executed");
 };
