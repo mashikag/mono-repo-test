@@ -4,7 +4,6 @@
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "verifyAccess": false,
       "registry": "https://npm.pkg.github.com/",
       "access": "public"
     }
