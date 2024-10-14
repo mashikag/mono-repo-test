@@ -178,6 +178,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mashikag/package-a@npm:^1.0.0, @mashikag/package-a@workspace:packages/package-a":
+  version: 0.0.0-use.local
+  resolution: "@mashikag/package-a@workspace:packages/package-a"
+  languageName: unknown
+  linkType: soft
+
+"@mashikag/package-b@workspace:packages/package-b":
+  version: 0.0.0-use.local
+  resolution: "@mashikag/package-b@workspace:packages/package-b"
+  dependencies:
+    "@mashikag/package-a": "npm:^1.0.0"
+  languageName: unknown
+  linkType: soft
+
 "@napi-rs/wasm-runtime@npm:0.2.4":
   version: 0.2.4
   resolution: "@napi-rs/wasm-runtime@npm:0.2.4"
@@ -3838,20 +3852,6 @@ __metadata:
   checksum: 10c0/ccae582b75a3597018a375f8eac32b93e8bfb9fc22a8e5037787ef4ebf5958d7465c2d3cbe26443971fbbfda2bcb7b645f694b91f928fc9a71fa5031e6e33f85
   languageName: node
   linkType: hard
-
-"package-a@npm:^1.0.0, package-a@workspace:packages/package-a":
-  version: 0.0.0-use.local
-  resolution: "package-a@workspace:packages/package-a"
-  languageName: unknown
-  linkType: soft
-
-"package-b@workspace:packages/package-b":
-  version: 0.0.0-use.local
-  resolution: "package-b@workspace:packages/package-b"
-  dependencies:
-    package-a: "npm:^1.0.0"
-  languageName: unknown
-  linkType: soft
 
 "package-json-from-dist@npm:^1.0.0":
   version: 1.0.1
