@@ -178,7 +178,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mashikag/package-a@npm:^1.0.0, @mashikag/package-a@workspace:packages/package-a":
+"@mashikag/package-a@npm:^0.0.1, @mashikag/package-a@workspace:packages/package-a":
   version: 0.0.0-use.local
   resolution: "@mashikag/package-a@workspace:packages/package-a"
   languageName: unknown
@@ -188,7 +188,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mashikag/package-b@workspace:packages/package-b"
   dependencies:
-    "@mashikag/package-a": "npm:^1.0.0"
+    "@mashikag/package-a": "npm:^0.0.1"
   languageName: unknown
   linkType: soft
 
