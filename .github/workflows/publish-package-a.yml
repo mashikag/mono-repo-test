@@ -26,6 +26,6 @@ jobs:
         run: yarn install
 
       - name: Publish Package A
-        run: npx lerna publish --scope package-a --yes
+        run: npx lerna publish --scope @mashikag/package-a --yes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
