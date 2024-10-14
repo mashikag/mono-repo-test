@@ -1,10 +1,10 @@
 {
   "name": "@mashikag/package-b",
   "packageManager": "yarn@4.1.0",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "dependencies": {
-    "@mashikag/package-a": "^0.0.1"
+    "@mashikag/package-a": "^0.0.2"
   },
   "scripts": {
     "test": "echo \"Running package-b tests\"",
