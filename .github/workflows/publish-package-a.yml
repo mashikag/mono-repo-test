@@ -1,0 +1,28 @@
+name: Publish Package A
+
+on:
+  push:
+    paths:
+      - "packages/package-a/**"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Publish Package A
+        run: npx lerna publish --scope package-a --yes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

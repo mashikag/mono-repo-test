@@ -1,5 +1,5 @@
 {
-  "name": "package-b",
+  "name": "@mashikag/package-b",
   "packageManager": "yarn@4.1.0",
   "version": "1.0.0",
   "main": "index.js",
@@ -9,5 +9,8 @@
   "scripts": {
     "test": "echo \"Running package-b tests\"",
     "start": "node index.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
